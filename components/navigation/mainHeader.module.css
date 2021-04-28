@@ -1,20 +1,70 @@
-
 .header {
-   display: flex;
-   align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .logo {
-   width: 50%;
-   text-align: left;
+	width: 50%;
+	text-align: left;
+   cursor: pointer;
+   padding: .5rem ;
+}
+.logo h1 {
+	margin: 0;
+	font-size: 2.5rem;
 }
 
 .navigation {
-   width: 50%;
+	width: 50%;
 }
 
 .navigation ul {
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.h {
+	color: var(--yellow);
+}
+
+.btn {
+	border: 2px solid var(--dark);
+	padding: 0.5rem 2rem;
+	border-radius: 5px;
+	transition: 0.3s;
+	font-size: 1.2rem;
+}
+
+.btnWork:hover,
+.btnWork:focus
+.btnContact:focus,
+.btnContact:hover
+ {
+	border-color: var(--yellow);
+	background-color: var(--deep-dark);
+	animation: btnWorkAnime .8s ease-in-out;
+	box-shadow: 5px 5px 5px var(--deep-dark);
+}
+
+.btnWhoIAm:hover,
+.btnWhoIAm:focus {
+   border: 3px solid var(--deep-dark) ;
+   background-color: var(--yellow);
+   border-radius: 10px;
+  
+}
+.btnWhoIAm:hover> a,
+.btnWhoIAm:focus> a {
+   color: var(--deep-dark);
+   transition: 0.3s;
+}
+@keyframes btnWorkAnime {
+	50% {
+		transform: scale(1.05);
+	}
+	to {
+		transform: scale(1);
+		box-shadow: 3px 3px 0 #1f1a1a;
+	}
 }

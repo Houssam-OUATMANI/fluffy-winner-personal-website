@@ -1,6 +1,6 @@
 
 export default function ProjectPage() {
    return (
-      <h1>PAGE PROJET</h1>
+     <center> <h1>PAGE PROJET</h1></center>
    )
 }
