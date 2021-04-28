@@ -1,6 +1,8 @@
 .header {
 	display: flex;
 	align-items: center;
+	max-width: 1200px;
+	margin: auto;
 }
 
 .logo {
@@ -49,11 +51,11 @@
 
 .btnWhoIAm:hover,
 .btnWhoIAm:focus {
-   border: 3px solid var(--deep-dark) ;
+   border: 2px solid var(--deep-dark) ;
    background-color: var(--yellow);
    border-radius: 10px;
-  
 }
+
 .btnWhoIAm:hover> a,
 .btnWhoIAm:focus> a {
    color: var(--deep-dark);

@@ -1,0 +1,67 @@
+.hero {
+	position: absolute;
+	top: 3rem;
+	width: 100%;
+	background: url("../../images/paris.jpg");
+	height: 80vh;
+	z-index: -5;
+	background-size: cover;
+	background-position: bottom;
+}
+
+.hero::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -4;
+	background-color: #272730ad;
+}
+
+.hero__content {
+	width: 1200px;
+	max-width: 1200px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 100%;
+   margin: auto;
+}
+.presentation,
+.picture {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 45%;
+	height: 80%;
+	background-color: #000000e1;
+	border-radius: 20px;
+}
+
+.fullname strong {
+	font-family: "Indie Flower", sans-serif;
+	font-size: 4.5rem;
+	line-height: 3rem;
+}
+
+.presentation p {
+	font-size: 1.5rem;
+}
+
+.h_anime:hover {
+	animation: skews 2s ease;
+}
+
+@keyframes skews {
+	from {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-100px);
+	}
+	to {
+		transform: translateY(0);
+	}
+}

@@ -12,7 +12,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     background-color: var(--dark);
 }
-body {
+
+.container{
   max-width: 1200px;
   margin: auto;
 }
@@ -40,5 +41,9 @@ p,a {
 }
 
 ::selection {
-  background-color: rgb(212, 39, 73);
+  background-color: rgba(212, 39, 74, 0.76);
+}
+
+.h {
+  color: var(--yellow);
 }
